@@ -1,0 +1,17 @@
+---
+driver_plugin: vagrant
+
+provisioner:
+  name: chef_zero
+
+platforms:
+- name: Win2k12r2SQL
+  driver_config:
+    box: Win2k12r2SQL
+    guest: :windows
+
+suites:
+- name: default
+  run_list:
+    - 'recipe[tbi-base::default]'
+  attributes:
