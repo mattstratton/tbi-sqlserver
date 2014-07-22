@@ -13,5 +13,5 @@ platforms:
 suites:
 - name: default
   run_list:
-    - 'recipe[tbi-base::default]'
+    - 'recipe[tbi-sqlserver::default]'
   attributes:
