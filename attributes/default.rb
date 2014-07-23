@@ -1,3 +1,6 @@
-default['sql_server']['accept_license_terms'] = true
-default['sql_server']['url'] = 'file://c:/temp/standard/setup.exe'
-default['sql_server']['instance_name'] = 'MSSQLSERVER'
+override['sql_server']['reg_version'] = 'MSSQL11.'
+override['sql_server']['version'] = '2012'
+override['sql_server']['accept_eula'] = 'yes'
+override['sql_server']['server']['url'] = 'file://c:/temp/standard/setup.exe'
+override['sql_server']['instance_name'] = 'MSSQLSERVER'
+override['sql_server']['server']['package_name'] = 'Microsoft SQL Server 2012 (64-bit)'

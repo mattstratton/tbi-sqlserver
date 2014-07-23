@@ -20,3 +20,8 @@ suites:
   run_list:
     - 'recipe[tbi-sqlserver::default]'
   attributes:
+    sql_server:
+      instance_name: MSSQLSERVER
+      accept_eula: true
+      server:
+        url: file://c:/temp/standard/setup.exe
