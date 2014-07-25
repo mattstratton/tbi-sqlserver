@@ -1,5 +1,4 @@
 override['sql_server']['reg_version'] = 'MSSQL11.'
-override['sql_server']['version'] = '2012'
 override['sql_server']['accept_eula'] = 'yes'
 override['sql_server']['server']['url'] = 'file://c:/temp/standard/setup.exe'
 override['sql_server']['instance_name'] = 'MSSQLSERVER'

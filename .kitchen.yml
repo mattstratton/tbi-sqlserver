@@ -1,4 +1,7 @@
 ---
+kitchen:
+  log_level: debug
+
 driver_plugin: vagrant
 
 provisioner:
@@ -20,3 +23,8 @@ suites:
   run_list:
     - 'recipe[tbi-sqlserver::default]'
   attributes:
+    chef_client:
+      config:
+        log_level: ":debug"
+    sql_server:
+      version: '2012'
